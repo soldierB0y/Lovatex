@@ -705,8 +705,10 @@ banner
   height: 100%;
   left: 0;
   top: 0;
+  background: rgb(255, 255, 255,.5);
   background-size: cover;
   background-position: center;
+  
 }
 
 .swiper-slide-active h2 {
