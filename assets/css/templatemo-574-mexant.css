@@ -155,7 +155,7 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: #43ba7f;
-  padding: 12px 30px;
+  padding: 8px 30px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
@@ -172,7 +172,7 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: #ff511a;
-  padding: 12px 30px;
+  padding: 8px 30px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
@@ -258,7 +258,7 @@ header
 .header-area .main-nav .logo {
   line-height: 120px;
   color: #fff;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -573,7 +573,7 @@ header
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
-    color: #1e1e1e;
+    color: white;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -688,12 +688,14 @@ banner
 */
 
 .swiper-container {
-  height: calc(100vh - 0px);
+  height: calc(110vh - 0px);
   margin: 0px;
+
   background-color: #212741;
 }
 
 .swiper-slide {
+
   overflow: hidden;
 }
 
@@ -746,13 +748,15 @@ banner
 .slide-inner .header-text h2 {
   position: relative;
   z-index: 2;
-  font-size: 56px;
+  font-size: 3vw;
+  
   color: #fff;
   font-weight: 700;
   opacity: 1;
   visibility: visible;
-  line-height: 70px;
+  line-height: 60px;
   margin-bottom: 40px;
+  padding-top: 20vh;
 }
 
 .slide-inner .header-text .div-dec {
@@ -1714,6 +1718,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .slide-inner .header-text h2 {
+    font-size: 5vw;
+    line-height: 35px;
+  }
   .header-area .main-nav .logo {
     line-height: 100px;
   }
@@ -1764,3 +1772,4 @@ body {
     padding: 50px;
   }
 }
+
