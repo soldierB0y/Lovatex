@@ -302,7 +302,7 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 14px;
   text-transform: capitalize;
   color: #fff;
@@ -705,10 +705,10 @@ banner
   height: 100%;
   left: 0;
   top: 0;
-  background: rgb(255, 255, 255,.5);
+  
   background-size: cover;
   background-position: center;
-  
+
 }
 
 .swiper-slide-active h2 {
@@ -845,7 +845,10 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.jpg);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/assets/images/pagina\ principal/EXPER.jpg);
+
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -884,6 +887,10 @@ section.simple-cta .buttons {
   display: flex;
   justify-content: end;
 }
+
+
+
+
 
 section.simple-cta .buttons .orange-button {
   margin-left: 20px;
@@ -1720,9 +1727,19 @@ body {
 }
 
 @media (max-width: 767px) {
+  .header-text
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
   .slide-inner .header-text h2 {
     font-size: 5vw;
     line-height: 35px;
+    width: 65vw;
+    padding-top: 5vh;
+
   }
   .header-area .main-nav .logo {
     line-height: 100px;
