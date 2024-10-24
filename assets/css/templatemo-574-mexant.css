@@ -44,6 +44,10 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+img
+{
+  -webkit-user-drag: none;
+}
 .clearfix:after {
   content: ".";
   display: block;
@@ -827,20 +831,24 @@ section.services {
   margin-bottom: 20px;
 }
 
-.services .service-item i {
+.iconImgService {
   transition: all .5s;
   float: left;
   font-size: 64px;
-  color: #43ba7f;
+  -webkit-user-drag: none;
   margin-bottom: 30px;
   margin-right: 30px;
-}
+  width: 8vh;
+  filter: brightness(0) saturate(100%) invert(54%) sepia(30%) saturate(581%) hue-rotate(86deg) brightness(92%);}
 
 .service-item p
 {
   padding-left: 30%;
   justify-content: left;
 }
+
+
+
 
 
 /*
