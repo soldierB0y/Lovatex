@@ -846,7 +846,7 @@ section.services {
   margin-bottom: 30px;
   margin-right: 30px;
   width: 8vh;
-  filter: brightness(0) saturate(100%) invert(54%) sepia(30%) saturate(581%) hue-rotate(86deg) brightness(92%);}
+  filter: brightness(0) saturate(100%) invert(54%) sepia(30%) saturate(581%) hue-rotate(150deg) brightness(45%);}
 
 .service-item p
 {
@@ -1566,7 +1566,7 @@ section.service-details ul.nacc li.active {
 .contenedorConocenosMejor
 {
   display: flex;
-  box-shadow: 15px 15px 1px rgb(201, 201, 201);
+  box-shadow: 5px 5px 10px rgb(228, 228, 228);
   border-radius: 40px;
   overflow-x: hidden;
 }
@@ -1587,7 +1587,7 @@ section.service-details ul.nacc li.active {
   display: flex;
   align-items: center;
   padding: 0 3vw;
-  font-size: 20px;
+  font-size: 17px;
 }
 .contenedorConocenosMejor-part1
 {
