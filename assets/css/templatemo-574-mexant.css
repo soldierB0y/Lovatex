@@ -1121,9 +1121,74 @@ section.calculator .section-heading h4 {
 
 /* 
 ---------------------------------------------
-testimonials
+productos
 --------------------------------------------- 
 */
+
+.contenedorProductos
+{
+
+  display: flex !important;
+  flex-direction: column;
+
+}
+
+.contenedorProductos a 
+{
+
+  display: flex;
+  justify-content: center;
+}
+
+.botonComprarYa
+{
+  font-size: 14px;
+  color: #fff;
+  background-color: rgb(58, 71, 134);
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  outline: none;
+  border-style: none;
+
+}
+
+.item h4
+{
+
+  text-align: center;
+}
+
+.item img
+{
+  width: 50vw !important;
+  height: 40vw !important;
+  object-fit: cover !important;
+  object-position: bottom;
+}
+
+.item
+{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.item p
+{
+  text-align: justify;
+  padding: 0 10vw;
+  height: 20vh;
+}
+
+
 
 section.testimonials {
   margin-top: 90px;
@@ -1663,6 +1728,7 @@ section.map .info-item a:hover {
   font-size: 14px;
   outline: none;
   margin-bottom: 30px;
+
 }
 
 #contact textarea {
@@ -1702,6 +1768,10 @@ section.map .info-item a:hover {
   background-color: rgb(58, 71, 134);
 }
 
+input
+{
+  padding-left: 15px !important;
+}
 
 /* 
 ---------------------------------------------
@@ -1715,6 +1785,16 @@ body {
 }
 
 @media (max-width: 992px) {
+
+  .item img
+{
+  width: 70vw !important;
+  height: 30vh !important;;
+  object-fit: cover;
+}
+
+
+
   .header-area .main-nav .nav li:last-child {
     display: none;
   }
