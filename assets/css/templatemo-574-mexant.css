@@ -1125,6 +1125,98 @@ productos
 --------------------------------------------- 
 */
 
+.sectionProductos
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.cardProducto img
+{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.cardProducto h4
+{
+  background-color:whitesmoke;
+  text-align: center;
+  position:absolute;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 20px;
+}
+.cardProducto p
+{
+  color: white;
+  padding: 0 20px;
+}
+.cardProducto button
+{
+  width: 40%;
+  height: 5vh;
+  border-radius: 20px;
+  border-style: none;
+  margin-bottom: 20px;
+  background-color: #d11329ff;
+  color:white
+}
+
+.cardProducto
+{
+  overflow: hidden;
+  border-style:none;
+  position:relative;
+  width: 30vw;
+  height: 35vw;
+  border: 1px black solid;
+  border-radius: 25px;
+  transition: .05s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background: linear-gradient(225deg,white,#181d30);
+
+
+}
+.cardProducto:hover
+{
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.contenedorProductosCard
+{
+  padding-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+justify-content: center;
+  height: 85vh;
+
+  overflow-y: hidden;
+
+  padding-bottom: 50px;
+
+}
+.contenedorProductos
+{
+  width: 100%
+
+}
+
+
+.col-lg-10
+{
+
+}
+
+
 .contenedorProductos
 {
 
@@ -1157,6 +1249,25 @@ productos
 
 }
 
+
+
+.botonVerMas
+{
+  font-size: 14px;
+  color: #fff;
+  background-color: #d11329ff;
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  outline: none;
+  border-style: none;
+
+}
+
 .item h4
 {
 
@@ -1166,6 +1277,7 @@ productos
 .item img
 {
   width: 50vw !important;
+
   height: 40vw !important;
   object-fit: cover !important;
   object-position: bottom;
@@ -1178,6 +1290,9 @@ productos
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+
+
 }
 
 
@@ -1185,7 +1300,8 @@ productos
 {
   text-align: justify;
   padding: 0 10vw;
-  height: 20vh;
+  height: fit-content;
+  min-height: 25vh;
 }
 
 
@@ -1786,6 +1902,17 @@ body {
 
 @media (max-width: 992px) {
 
+
+  .contenedorProductosCard
+  {
+    gap:50px
+  }
+
+  .cardProducto
+  {
+    width: 80vw;
+    height: 63vh;
+  }
   .item img
 {
   width: 70vw !important;
@@ -1793,7 +1920,10 @@ body {
   object-fit: cover;
 }
 
-
+.item p
+{
+  min-height: 41vh;
+}
 
   .header-area .main-nav .nav li:last-child {
     display: none;
