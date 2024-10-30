@@ -826,6 +826,7 @@ section.services {
   padding: 40px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
+
 }
 
 .services .service-item:hover i {
@@ -1141,6 +1142,17 @@ productos
   object-fit: cover;
 }
 
+.cardProducto h6
+{
+  color:white;
+  text-decoration: underline;
+}
+
+.cardProducto h6:hover
+{
+  cursor:pointer;
+}
+
 .cardProducto h4
 {
   background-color:whitesmoke;
@@ -1148,12 +1160,32 @@ productos
   position:absolute;
   width: 100%;
   padding: 5px 0;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.cardProducto span
+{
+
+  min-height: 100px;
+  max-height: 100px;
+  overflow-y: hidden;
+}
+
+.cardProductoShowAll
+{
+  min-height: fit-content !important;
+  max-height: fit-content !important;
+  height: fit-content !important;
+  overflow-y:visible;
+
 }
 .cardProducto p
 {
   color: white;
-  padding: 0 20px;
+  padding: 0 30px;
+  font-size: 12;
+  text-align: justify;
+
 }
 .cardProducto button
 {
@@ -1175,7 +1207,7 @@ productos
   height: 35vw;
   border: 1px black solid;
   border-radius: 25px;
-  transition: .05s ease-in-out;
+  transition: .1s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1187,6 +1219,7 @@ productos
 .cardProducto:hover
 {
   scale: 1.05;
+  transform: translateY(-10px);
 }
 
 .contenedorProductosCard
@@ -1498,6 +1531,20 @@ section.top-section .accordions {
   .accordion-head {
     padding: 1rem;
     font-size: 1.2rem;
+  }
+
+  .contenedorServicio
+  {
+    transition: .2s ease-in-out;
+  }
+
+  .contenedorServicio:hover
+  {
+
+    position:relative;
+    transform: translateY(-15px);
+    cursor: pointer;
+    
   }
 }
 .accordion-head .icon {
@@ -1932,7 +1979,7 @@ body {
 
 .animationRighttoLeft {
   position: relative;
-  animation: animationRighttoLeft 2s ease-in-out;
+  animation: animationRighttoLeft .8s ease-in-out;
 }
 
 @keyframes animationRighttoLeft {

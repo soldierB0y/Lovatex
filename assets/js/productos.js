@@ -12,11 +12,13 @@ function handleVerMas()
     if(verMas==false)
     {
         verMas=true;
+        idBotonVerMas.textContent='Ver Menos';
         contenedorProductos.style.height='fit-content';
         contenedorProductos.style.transition='transition: 1s ease-in-out';
     }
     else
     {
+        idBotonVerMas.textContent='¡Ver Mas!'
         verMas=false;
         contenedorProductos.style.height=(cardProductoHeight+70)+'px'
     }
@@ -50,3 +52,33 @@ const observer = new IntersectionObserver(entries=>{
 
 
 observer.observe(sectionAbout)
+
+
+
+// ver mas dentro del cardProduct
+
+let allCardProduct = document.querySelectorAll('.cardProducto');
+allCardProduct.forEach((producto) => {
+    let botonVerMasTexto = producto.querySelector('.botonVerMasTexto'); 
+    let bool= false;
+    let contenedorTexto= producto.querySelector('.contenedorTexto');
+    console.log(contenedorTexto);
+    try {
+        botonVerMasTexto.addEventListener('click', () => {
+            if (!bool)
+            {
+                botonVerMasTexto.textContent='ver menos'
+                bool=true;
+                contenedorTexto.classList.toggle('cardProductoShowAll');
+            }
+            else
+            {
+                botonVerMasTexto.textContent='ver mas'
+                bool= false;
+                contenedorTexto.classList.toggle('cardProductoShowAll');
+            }
+        });
+    } catch (error) {
+        console.log(error);
+    }
+});
