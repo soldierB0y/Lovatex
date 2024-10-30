@@ -1137,7 +1137,7 @@ productos
 .cardProducto img
 {
   width: 100%;
-  height: 50%;
+  height: 40vh;
   object-fit: cover;
 }
 
@@ -1187,7 +1187,6 @@ productos
 .cardProducto:hover
 {
   scale: 1.05;
-  cursor: pointer;
 }
 
 .contenedorProductosCard
