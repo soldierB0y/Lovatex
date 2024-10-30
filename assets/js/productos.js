@@ -29,7 +29,7 @@ idBotonVerMas.addEventListener("click",handleVerMas);
 
 
 
-//Estas observando el about us?
+//observando el about us
 
 let animacionAboutUs=false;
 let sectionAbout= document.getElementById('about');
@@ -62,7 +62,7 @@ allCardProduct.forEach((producto) => {
     let botonVerMasTexto = producto.querySelector('.botonVerMasTexto'); 
     let bool= false;
     let contenedorTexto= producto.querySelector('.contenedorTexto');
-    console.log(contenedorTexto);
+
     try {
         botonVerMasTexto.addEventListener('click', () => {
             if (!bool)
@@ -70,6 +70,7 @@ allCardProduct.forEach((producto) => {
                 botonVerMasTexto.textContent='ver menos'
                 bool=true;
                 contenedorTexto.classList.toggle('cardProductoShowAll');
+
             }
             else
             {
