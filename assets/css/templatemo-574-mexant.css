@@ -866,7 +866,7 @@ cta
 
 section.simple-cta {
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/assets/images/pagina\ principal/EXPER.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(assets/images/pagina\ principal/EXPER.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1137,7 +1137,7 @@ productos
 .cardProducto img
 {
   width: 100%;
-  height: 40vh;
+  height: 40givh;
   object-fit: cover;
 }
 
@@ -1888,6 +1888,71 @@ input
   padding-left: 15px !important;
 }
 
+
+body {
+  overflow-x: hidden;
+}
+
+.animationUp {
+  position: relative;
+  animation: animationUp 1s ease-in-out;
+}
+
+@keyframes animationUp {
+  0% {
+    top: 75px;
+    opacity: 0;
+
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+
+  }
+}
+
+.animationLefttoRight {
+  position: relative;
+  animation: animationLefttoRight 1s ease-in-out;
+}
+
+@keyframes animationLefttoRight {
+  0% {
+    left: 75px;
+    opacity: 0;
+
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+
+  }
+}
+
+
+.animationRighttoLeft {
+  position: relative;
+  animation: animationRighttoLeft 2s ease-in-out;
+}
+
+@keyframes animationRighttoLeft {
+
+  0% {
+
+    opacity: 0;
+
+  }
+  50%
+  {
+    right: 75px;
+  }
+    100% {
+    right: 0;
+    opacity: 1;
+
+  }
+}
+
 /* 
 ---------------------------------------------
 responsive
@@ -1895,9 +1960,6 @@ responsive
 */
 
 
-body {
-  overflow-x: hidden;
-}
 
 @media (max-width: 992px) {
 
