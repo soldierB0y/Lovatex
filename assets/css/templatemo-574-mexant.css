@@ -866,7 +866,7 @@ cta
 
 section.simple-cta {
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(assets/images/pagina\ principal/EXPER.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pagina\ principal/EXPER.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
