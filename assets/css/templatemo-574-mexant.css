@@ -156,10 +156,14 @@ body {
 }
 
 .green-button a {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  padding-top: 7px;
+  display: flex;
   font-size: 14px;
   color: #fff;
   background-color: rgb(58, 71, 134);
-  padding: 8px 30px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
@@ -176,7 +180,10 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: #d11329ff;
-  padding: 8px 30px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  padding-top: 7px;
   display: inline-block;
   border-radius: 5px;
   font-weight: 500;
@@ -1162,9 +1169,11 @@ productos
 
 .cardProducto img
 {
-  width: 100%;
+  width: 70%;
   height: 40vh;
+  padding-top: 25px;
   object-fit: cover;
+
 }
 
 .cardProducto h6
@@ -1180,14 +1189,14 @@ productos
 
 .cardProducto h4
 {
-  background-color:whitesmoke;
+
   text-align: center;
-  position:absolute;
+
   width: 100%;
   padding: 10px 0;
-  border-bottom: 1px solid black;
-  box-shadow: 0 3px 5px rgb(184, 184, 184);
+  color:white;
   font-size: 15px;
+  font-weight: 700;
 }
 
 .cardProducto span
@@ -1232,7 +1241,7 @@ productos
   position:relative;
   width: 30vw;
   height: 35vw;
-  border: 1px black solid;
+
   border-radius: 25px;
   transition: .1s ease-in-out;
   display: flex;
@@ -1358,9 +1367,11 @@ justify-content: center;
 .item p
 {
   text-align: justify;
-  padding: 0 10vw;
+  padding: 0 3vw;
   height: fit-content;
-  min-height: 25vh;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -2114,9 +2125,14 @@ responsive
   .cardProducto p
   {
     font-size: 10px;
-    line-height: 12px;
+    line-height: 12px;;
   }
 
+  .cardProducto h4
+  {
+
+    padding: 0 5vw;
+  }
   .item img
 {
   width: 70vw !important;

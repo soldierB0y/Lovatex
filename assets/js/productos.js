@@ -40,8 +40,8 @@ function animacionMirar(isIntersecting)
     if (isIntersecting==true && animacionAboutUs==false)
     {
         animacionAboutUs=true; 
-        aboutUs1.classList.toggle('animationLefttoRight');
-        aboutUs2.classList.toggle('animationRighttoLeft');
+        aboutUs1.classList.toggle('animationRighttoLeft');
+        aboutUs2.classList.toggle('animationLefttoRight');
     }
 
 }
