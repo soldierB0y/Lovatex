@@ -607,6 +607,31 @@ header
 
     width: 100% !important;
   }
+  .contenedorConocenosMejor
+  {
+    flex-direction: column !important;
+    gap: 50px;
+  }
+  .contenedorConocenosMejor span
+  {
+    width: 100% !important;
+    height: fit-content;
+
+  }
+  .contenedorConocenosMejor span p
+  {
+
+    height: fit-content !important;
+    padding: 50px 10px !important;
+    
+  }
+  .contenedorConocenosMejor-part2
+  {
+    flex-direction: column !important;
+  }
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -1169,10 +1194,10 @@ productos
 
 .cardProducto img
 {
-  width: 70%;
-  height: 40vh;
+  width: 80%;
+  height: 35vh;
   padding-top: 25px;
-  object-fit: cover;
+  object-fit: contain;
 
 }
 
@@ -1928,7 +1953,10 @@ section.service-details ul.nacc li.active {
 }
 
 
-
+.contenedorConocenosMejor-part1,.contenedorConocenosMejor-part2
+{
+  font-size: 1px;
+}
 
 
 /* 
