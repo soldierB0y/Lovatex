@@ -590,6 +590,16 @@ header
   .header-area .main-nav:before {
     display: none;
   }
+.flexRow
+{
+  height: 100vh;
+  flex-direction: column !important;
+}
+  .contenedorFooter
+  {
+
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1552,7 +1562,7 @@ section.top-section .accordions {
 .flexRow
 {
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: row;
   flex-wrap: nowrap;
   gap:3%;
 
