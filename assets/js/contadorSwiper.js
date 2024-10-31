@@ -1,21 +1,14 @@
 
-
-
 let botonSwiper = document.getElementById('botonRight');
-let slidercontainer= document.getElementById('top');
+let slidercontainer = document.getElementById('top');
 
-
-
-const interval = setInterval(() => {
+let interval = setInterval(() => {
     botonSwiper.click();
 }, 8000);
 
-
-slidercontainer.addEventListener('click',()=>{
-  clearInterval(interval);
-  interval = setInterval(() => {
-    botonSwiper.click();
-}, 8000);
-    
-})
-// To stop the interval, you can use clearInterval(interval) when needed.
+slidercontainer.addEventListener('click', () => {
+    clearInterval(interval); // Clear the existing interval
+    interval = setInterval(() => { // Restart the interval
+        botonSwiper.click();
+    }, 8000);
+});
