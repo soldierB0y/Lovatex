@@ -622,7 +622,8 @@ header
   {
 
     height: fit-content !important;
-    padding: 50px 10px !important;
+    padding: 50px 30px !important;
+    text-align: justify;
     
   }
   .contenedorConocenosMejor-part2
@@ -904,9 +905,9 @@ section.services {
   margin-bottom: 30px;
   margin-right: 30px;
   width: 8vh;
-  filter: brightness(0) saturate(100%) invert(54%) sepia(30%) saturate(581%) hue-rotate(150deg) brightness(45%);}
-
-.service-item p
+  filter: brightness(0) saturate(100%) invert(20%) sepia(13%) saturate(3787%) hue-rotate(189deg) brightness(89%) contrast(109%);
+}
+  .service-item p
 {
   padding-left: 30%;
   justify-content: left;
